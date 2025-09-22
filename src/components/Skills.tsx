@@ -13,14 +13,6 @@ const Skills = () => {
       ]
     },
     {
-      title: "Web Development",
-      icon: Globe,
-      skills: [
-        { name: "HTML", level: 85, description: "Semantic markup, accessibility, and modern HTML5 features" },
-        { name: "CSS", level: 80, description: "Responsive design, Flexbox, Grid, and modern CSS techniques" }
-      ]
-    },
-    {
       title: "Cloud Computing",
       icon: Cloud,
       skills: [

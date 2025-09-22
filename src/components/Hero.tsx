@@ -1,6 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profileImage from '@/assets/rastrith-profile.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -14,19 +13,6 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center fade-up">
-          {/* Profile Image */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden shadow-elegant">
-                <img
-                  src={profileImage}
-                  alt="Rastrith T R Gowda"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-0 hover:opacity-10 transition-smooth"></div>
-            </div>
-          </div>
 
           {/* Main Content */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
@@ -39,13 +25,13 @@ const Hero = () => {
 
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             2nd-year Engineering student at Dayananda Sagar University, passionate about 
-            cloud computing and programming. Building skills in Python, C++, HTML, and CSS 
+            cloud computing and programming. Building skills in Python and C++ 
             to create impactful solutions.
           </p>
 
           {/* Skills Highlights */}
           <div className="flex flex-wrap justify-center gap-3 mb-10">
-            {['Python', 'C++', 'HTML', 'CSS', 'Cloud Computing'].map((skill) => (
+            {['Python', 'C++', 'Cloud Computing'].map((skill) => (
               <span
                 key={skill}
                 className="px-4 py-2 bg-accent text-accent-foreground rounded-full text-sm font-medium border border-border"
